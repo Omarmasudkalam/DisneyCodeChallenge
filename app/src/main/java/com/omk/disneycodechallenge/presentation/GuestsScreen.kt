@@ -230,15 +230,6 @@ fun GuestsNeedReservation(
     names: List<String>,
     viewModel: GuestsViewModel
 ) {
-    /*
-    Column(modifier = Modifier.verticalScroll(state = rememberScrollState())) {
-        names.forEach {
-            SingleGuestNeedReserve(name = it, checked = isChecked.value, viewModel)
-            Spacer(modifier = Modifier.padding(8.dp))
-        }
-
-    }
-    */
     LazyColumn(modifier = Modifier.fillMaxWidth().size(240.dp)){
         items(names.size) { i ->
             val name=names[i]
